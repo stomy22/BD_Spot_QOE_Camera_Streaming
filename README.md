@@ -8,13 +8,13 @@ Control a Boston Dynamics Robot Dog with a Hololens 2. See the Livestreams of th
 - use ubuntu 18.04
 - Follow [Spot SDK](https://dev.bostondynamics.com/) to install the boston dynamics python library
 - install these additional python librarys: numpy, opencv, threading
-- copy all the folder [python](src/python) to this computer
+- copy the [spot_cam_server.py](src/python/spot_cam_server.py) to interface pc
 
 ### edge computer
 - use windows 10
 - install unity 
 - load [hololens_handtracking](src/unity/) into Unity
-- you can find the scripts [here](src/unity/hololens_handtracking/Assets/Scripts/)
+- you can find the unity scripts [here](src/unity/hololens_handtracking/Assets/Scripts/)
 
 ## important
 Advice:
