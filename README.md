@@ -19,8 +19,7 @@ Using a dynamic requesting scheme to improve the framerate in the users field of
 - you can find the unity scripts [here](src/unity/adaptive_videostreaming/Assets/Scripts/)
 
 ## important
-Advice:
-- always start the Linux Computer with the Python Script **Before** you start the Unity Application
+always start the Linux Computer with the Python Script **Before** you start the Unity Application
 
 ## Setup
 
@@ -29,7 +28,7 @@ Advice:
 ## Getting Started
 start every device and connect everything as it is shown in the setup graphic
 
-### Hololens
+### HoloLens 2
 - [first usage Information](https://docs.microsoft.com/en-us/hololens/hololens2-setup)
 - [daily usage Information](https://docs.microsoft.com/en-us/hololens/holographic-home)
 - push Power button
@@ -54,27 +53,16 @@ start every device and connect everything as it is shown in the setup graphic
 - connect with interface pc to accespoint
 
 ### interface PC
-Connect XBox Controller to USB-Port of Linux Computer
-
-log into Linux Computer with SSH:
+log into Linux Computer:
 
 start the python script
 ```bash
-# start XBox Control and livestream from all Cameras
-sudo -E python3 main.py --stream front_left front_right left right arm back --quality 25 --control
+# start livestream from all Cameras
+sudo -E python3 spot_cam_server.py --stream front_left front_right left right arm back --quality 25 --control
 ```
 
 Additional commands for advanced usage
 ```bash
-# start only XBox Control
-sudo -E python3 main.py --control
-
-# start only livestreams
-sudo -E python3 main.py --stream front_left front_right left right arm back --quality 25
-
-# start simulation 
-sudo -E python3 main.py --stream front_left front_right left right arm back --quality 25 --simulation
-
 # additional Arguments
 --ip-hololens 0.0.0.0       # change IP of Hololens Computer, default: 192.168.2.4
 --ip-spot 0.0.0.0           # change IP of BD Spot, default: 192.168.2.6
@@ -85,14 +73,13 @@ sudo -E python3 main.py --stream front_left front_right left right arm back --qu
 --password                  # Spot password
 
 # more Arguments
-python3 main.py --help
+python3 spot_cam_server.py --help
 ```
 
-Gesture Control is only possible if Spot is in mode standing
 
 ### Windows Computer
 - start Unity Hub from Desktop or Start
-- click on `hololens_handtracking` Project to open Project
+- click on `adaptive_videostreaming` Project to open Project
 - set the IP of the Hololens for Holographic Remoting (can be skipped if already done)
     - click in the Toolbar on Mixed Reality
     - Remoting/Holographoc Remoting for Play Mode
