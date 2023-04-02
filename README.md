@@ -1,7 +1,9 @@
 # Boston Dynamics Spot with Augmented Reality
 
 ## Description
-Control a Boston Dynamics Robot Dog with a Hololens 2. See the Livestreams of the Cameras inside a virtual Environment and interact with Hand Gestures with the Roboter Dog's Arm.
+
+See the camera livestreams of a Boston Dynamics robot dog Spot on holographic screens inside a Microsoft HoloLens 2. 
+Using a dynamic requesting scheme to improve the framerate in the users field of view.
 
 ## install instruction
 ### interface pc
@@ -13,8 +15,8 @@ Control a Boston Dynamics Robot Dog with a Hololens 2. See the Livestreams of th
 ### edge computer
 - use windows 10
 - install unity 
-- load [hololens_handtracking](src/unity/) into Unity
-- you can find the unity scripts [here](src/unity/hololens_handtracking/Assets/Scripts/)
+- load load the project adaptive_videostreaming from [unity](src/unity/) into Unity
+- you can find the unity scripts [here](src/unity/adaptive_videostreaming/Assets/Scripts/)
 
 ## important
 Advice:
